@@ -10,7 +10,6 @@ function windowResize(b) {
 window.innerWidth < 600 ? windowResize(0) : windowResize(65)
 window.onload = function() {
 	window.onresize = function() {
-		console.log("hi")
 		window.innerWidth < 600 ? windowResize(0) : windowResize(65)
 		transformFix()
 	}
@@ -92,8 +91,6 @@ document.querySelectorAll(".arrow img").forEach(function(e) {
 				if (prev.previousElementSibling === null) {
 					document.querySelector(".pages img[data-arrow='left']:not(section img)").style.cssText = "opacity: 0.3; cursor: unset;";
 				}
-				console.log(prev.previousElementSibling)
-
 				const revTextColor = prev.dataset.color === "white" ? "#222" : "#f1f1f1"
 				const textColor = prev.dataset.color === "white" ? "#f1f1f1" : "#222"
 				document.querySelectorAll("header .logo img, .arrows img, header img").forEach(function(g) {
