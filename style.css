@@ -691,9 +691,6 @@ body {
     .page .last-silde .group-2 .circles .color {
       border-radius: 11em;
     }
-    .page .last-silde .group-2 .circles {
-      border-radius: 11eem;
-    }
     .dropdown-content {
       max-height: 7em;
       overflow: scroll;
